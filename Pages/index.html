@@ -4,34 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="/Style/style.css">
     
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet2">
-
     <style>
     @font-face {
         font-family:"myfont";
-        src: url(fonts/AURORA-PRO.otf);
+        src: url(../fonts/AURORA-PRO.otf);
     }
     @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
-  
+
 </head>
 
 <body>
 <!-- Landing Page -->
+
+
 <section>
     <div class="nav">
         <ul>
             <li><a class="active" href="#home">Home</a></li>
-            <li><a href="./Pages/works.html" target="_blank">Works</a></li>
-            <li><a href="./Pages/aboutme.html">About me</a></li>
-            <li><a href="./Pages/contact.html">Contact</a></li>
+            <li><a href="#portfolio" >Works</a></li>
+            <li><a href="/Pages/aboutme.html">About me</a></li>
+            <li><a href="/Pages/contact.html" >Contact</a></li>
          </ul>
     </div>
 </section>
 
-
+<!-- Homepage -->
 <section>
     <div class="home-page">
         <div class="home-content">
@@ -42,6 +42,7 @@
     </div>
 </section>
  
+<!-- Quote -->
 <section>
     <div class="quote-page">
         <div class="quote-content">
@@ -50,41 +51,42 @@
     </div>
         </section>
 
-
+<!-- Portfolio -->
 <section>
-    <div class="portfolio-page">
+    <div class="portfolio-page" id="portfolio">
         <div class="myworkbar">
         <h1 class="mywork">My Work</h1>
         </div>
         <div class="work-list">
             <div class="work1">
-                <img src="Images/portfolio1.png">
+                <img src="/Images/portfolio1.png">
             </div>
             <div class="work2">
-                <img src="Images/portfolio2.png">
+                <img src="/Images/portfolio2.png">
             </div>
             <div class="work3">
-                <img src="Images/portfolio3.png">
+                <img src="/Images/portfolio3.png">
             </div>     
         </div>
     </div>
 </section>
 
+<!-- Contact -->
 <section>
     <div class="contact-page">
-        <h2 class="contact-title">Get in Touch!</h2>
-        <div class="contact-form">
-            <div class="contact-content">
-                <form action="#">
-                    <label>Name<input id="name" name="name"type="text" required></label>
-                    <br>
-                    <label>Email<input id="email" name="email" type="email" required></label>
-                    <br>
-                    <label>Message<input id="message" name="message" type="text" required></label>
-                    <button type="submit">Submit</button>
-                </form>
-
-            </div>
+        <div class="contact-content">
+            <h2 class="contact-title">Get in Touch!</h2>
+            <p class="subtitle">Want to work together or have a question? Feel free to reach out!</p>
+                <div class="contact-container">
+                    <form action="#">
+                        <label>Name<input id="name" name="name"type="text" required></label>
+                        <br>
+                        <label>Email<input id="email" name="email" type="email" required></label>
+                        <br>
+                        <label>Message<input id="message" name="message" type="text" required></label>
+                        <button type="submit"><strong>Submit</strong></button>
+                    </form>
+                </div>
         </div>
     </div>
 </section>
