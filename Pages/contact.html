@@ -12,10 +12,8 @@ body{
   overflow-x: hidden;  
 }
 
-
-
 .con-page{
-  background-color: #111;
+  background-color: #000000;
   display: flex;
   height: 100%;
   width: 100%;
@@ -40,11 +38,11 @@ body{
   width: 20%;
   left: 13%;
   margin-top: 6%;
-  
 }
 
 .ani-container {
   animation: slide-in 2s forwards;
+  
 }
 
 @keyframes slide-in {
@@ -60,16 +58,16 @@ body{
 display: flex;
 justify-content: center;
 align-items: center;
-height: 40vh;
+height: 20vh;
 width: 100%;
-background-color:  #111;
+background-color:  #000000;
 }
-
-
 
 legend{
   font-size: 25px;
   color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bolder;
 }
 
 label{
@@ -77,67 +75,19 @@ label{
 }
 
 .container {
-  display: block;
+  display: flex;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
+  margin-bottom: 15px;
+  font-size: 22px;  
 }
 
 
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+.container input{
+  position: absolute; 
+  right: 25%;
+  transform: scale(1.5);
 }
-
-
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-  border-radius: 50%;
-}
-
-
-.container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-
-.container input:checked ~ .checkmark {
-  background-color: #2196F3;
-}
-
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-
-.container input:checked ~ .checkmark:after {
-  display: block;
-}
-
-
-.container .checkmark:after {
-  top: 9px;
-  left: 9px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
-}
-
-
 
 
 </style>
@@ -149,13 +99,11 @@ label{
             <a href="/Pages/aboutme.html">About me</a></li>
             <a class="active" >Contact</a></li>
             <div class="dropdown">
-                <button class="dropbtn" >Dropdown
-                    <i class="fa fa-caret-down"></i>
+                <button class="dropbtn" >Resume
                   </button>
                 <div class="dropdown-content">
                     <a href="/Pages/skills.html">Skills</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+                    
                 </div>
             </div>
         </div> 
@@ -169,35 +117,22 @@ label{
     </a>
     <img src="https://www.pngall.com/wp-content/uploads/11/Hand-PNG-Images-HD.png" alt="hand" class="hand">
 </div> 
-
-       
-   
+ 
 </div>  
 <div class="survey-page">
 <div class="sur-container">
-  <legend> Based on this animation, how likely are you to connect?</legend>
-  <label class="container">Very Likely
-    <input type="checkbox" checked="checked">
-    <span class="checkmark"></span>
-  </label>
-  
-  <label class="container">Very Likely
-    <input type="checkbox">
-    <span class="checkmark"></span>
-  </label>
-  
-  <label class="container">Very Likely
-    <input type="checkbox">
-    <span class="checkmark"></span>
-  </label>
-  
-  <label class="container">Very Likely
-    <input type="checkbox">
-    <span class="checkmark"></span>
-  </label>
-
-    </div>    
-</div>     
+  <fieldset>
+    <legend>Based on this animation, how would you describe my skills? (Select that applies)</legend>
+    <label class="container">Very Talented
+       <input type="checkbox" name="checkbox" id="checkbox" checked="checked" />
+    </label>
+    <label class="container">Very Creative
+       <input type="checkbox" name="checkbox2" id="checkbox2" />
+    </label>
+    <label class="container">Best coder ever
+       <input type="checkbox" name="checkbox3" id="checkbox3" />
+    </label>
+ </fieldset>
     
 </body>
 </html>
